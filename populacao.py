@@ -69,6 +69,10 @@ class Populacao(object):
         if resp.upper() == 'S' or resp.upper() == 'SIM':
 
             # ------------------------------- --
+            # DEFAULT VALUE1
+            rmv = 'S'
+
+            # ------------------------------- --
             # REMOVE DADOS ANTIGOS
             if qtdIndividuos > 0:
                 rmv = Populacao.remover(dicProp['propriedadeId'])
